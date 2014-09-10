@@ -6,10 +6,13 @@ import javax.swing.JOptionPane;
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!
  * Do not change this fact.
  *
- * @author      your name goes here
+ * @author      David Phelps
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+
+// I used an abstract class so that the other subclasses can inherit
+// better from this class
+public abstract class IntroToProgrammingCourse implements WctcCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -17,13 +20,15 @@ public class IntroToProgrammingCourse {
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
+        this.setCredits(credits);
     }
 
     public String getCourseNumber() {
         return courseNumber;
     }
 
-    public final void setCourseNumber(String courseNumber) {
+    // removed final so it can be overridden. final is only for fixed obj.    
+    public void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");

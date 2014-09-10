@@ -40,4 +40,4 @@ public abstract interface WctcCourse {
     
 }
     
-}
+
