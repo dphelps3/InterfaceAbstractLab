@@ -10,9 +10,7 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 
-// I used an abstract class so that the other subclasses can inherit
-// better from this class
-public abstract class IntroToProgrammingCourse implements WctcCourse {
+public class IntroToProgrammingCourse implements WctcCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -20,7 +18,11 @@ public abstract class IntroToProgrammingCourse implements WctcCourse {
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
-        this.setCredits(credits);
+        
+    }
+
+    IntroToProgrammingCourse() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getCourseNumber() {
@@ -61,6 +63,50 @@ public abstract class IntroToProgrammingCourse implements WctcCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    public void setCourseName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setCourseNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double setSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double setSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     

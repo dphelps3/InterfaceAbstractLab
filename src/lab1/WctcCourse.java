@@ -26,18 +26,6 @@ public abstract interface WctcCourse {
     
     
     
-    public abstract double getStipends();
-    
-    public abstract double getSpcSalary();
-    
-    public abstract double setSpcSalary();
-    
-    public abstract double getSpcStipends();
-    
-    public abstract double getSpcCommission();
-    
-    public abstract double setSpcCommission();
-    
 }
     
 

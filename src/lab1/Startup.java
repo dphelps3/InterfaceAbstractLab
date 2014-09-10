@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package lab1;
 
 import java.util.Scanner;
@@ -15,18 +9,21 @@ public class Startup {
     
     public static void main(String[] args) {
     
-    double hoursWorked = 50;
-    double payRate = 21.50;
-    
+    String courseName = "Introduction to Programming";
+    String courseNumber = "152-101";
+        
     IntroToProgrammingCourse student1 = new IntroToProgrammingCourse();
-    hourlyEmp1.setHoursWorked(hoursWorked);
-    hourlyEmp1.setPayRate(payRate);
+    student1.setCourseName(courseName);
+    student1.setCourseName(courseNumber);
     
-    System.out.println("The employee pay is: $" 
-            + hourlyEmp1.displayHourlyEmployeePay());
+    
+    System.out.println("The course name is: " 
+            + student1.getCourseName());
+    
+    System.out.println("The course number is: " 
+            + student1.getCourseNumber());
     
     }
 }
 
-    
-}
+

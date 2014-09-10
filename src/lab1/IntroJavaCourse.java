@@ -6,7 +6,7 @@ package lab1;
  * @author      David Phelps
  * @version     1.00
  */
-public abstract class IntroJavaCourse extends IntroToProgrammingCourse {
+public class IntroJavaCourse extends IntroToProgrammingCourse {
     String courseName;
     private String courseNumber;
     private double credits;

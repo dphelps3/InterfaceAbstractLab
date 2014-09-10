@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      David Phelps
  * @version     1.00
  */
-public abstract class AdvancedJavaCourse implements WctcCourse {
+public class AdvancedJavaCourse implements WctcCourse {
     
     // courseName was not private. I changed it to private
     private String courseName;
