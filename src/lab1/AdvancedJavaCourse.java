@@ -5,18 +5,26 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      David Phelps
  * @version     1.00
  */
-public class AdvancedJavaCourse {
-    String courseName;
+public class AdvancedJavaCourse implements WctcCourse {
+    
+    // courseName was not private. I changed it to private
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
+    // this constructor needs to have ALL the properties included in the
+    // parameter. It only had courseName and courseNumber. I added the
+    // credits and prerequisites properties
+    public AdvancedJavaCourse(String courseName, String courseNumber,
+            double credits, String prerequisites) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
+        this.setCredits(credits);
+        this.setPrerequisites(prerequisites);
     }
 
     public String getCapitalizedCourseName() {
@@ -60,6 +68,50 @@ public class AdvancedJavaCourse {
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
+    }
+
+    public void setCourseName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setCourseNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double setSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double getSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double setSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
