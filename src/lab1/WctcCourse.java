@@ -5,7 +5,7 @@ package lab1;
  * Author David Phelps
  */
 
-public abstract interface WctcCourse {
+public interface WctcCourse {
     
     // methods that can be inherited by subclasses
     public abstract String getCourseName();
