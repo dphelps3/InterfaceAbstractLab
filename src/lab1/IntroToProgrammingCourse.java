@@ -14,7 +14,7 @@ public class IntroToProgrammingCourse implements WctcCourse {
     private double credits;
     
     public IntroToProgrammingCourse() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        
     }
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
@@ -54,7 +54,7 @@ public class IntroToProgrammingCourse implements WctcCourse {
     public String getCourseName() {
         return courseName;
     }
-
+    // why is/was this method final?
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

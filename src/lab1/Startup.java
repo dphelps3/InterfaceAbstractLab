@@ -12,9 +12,9 @@ public class Startup {
     String courseName = "Introduction to Programming";
     String courseNumber = "152-101";
         
-    IntroToProgrammingCourse student1 = new IntroToProgrammingCourse();
+    IntroJavaCourse student1 = new IntroJavaCourse();
     student1.setCourseName(courseName);
-    student1.setCourseName(courseNumber);
+    student1.setCourseNumber(courseNumber);
     
     
     System.out.println("The course name is: " 

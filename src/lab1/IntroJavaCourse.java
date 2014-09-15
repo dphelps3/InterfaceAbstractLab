@@ -16,13 +16,24 @@ public class IntroJavaCourse implements WctcCourse {
     private String prerequisites;
 
     public IntroJavaCourse() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        
     }
     
     public IntroJavaCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber); 
     }
+    
+    // Getting and setting courseName was nowhere to be found,
+    // so i created it here
+    public String getCourseName() {
+        return courseName;
+    }
+    
+    public void setCourseName (String courseName) {
+        this.courseName = courseName;
+    }
+    
     
     public String getCourseNumber() {
         return courseNumber;
@@ -94,12 +105,6 @@ public class IntroJavaCourse implements WctcCourse {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void setCourseName(String courseName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
 }

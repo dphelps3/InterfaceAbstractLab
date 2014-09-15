@@ -16,15 +16,13 @@ public class AdvancedJavaCourse implements WctcCourse {
     private double credits;
     private String prerequisites;
 
-    // this constructor needs to have ALL the properties included in the
-    // parameter. It only had courseName and courseNumber. I added the
-    // credits and prerequisites properties
-    public AdvancedJavaCourse(String courseName, String courseNumber,
-            double credits, String prerequisites) {
+    public AdvancedJavaCourse() {
+        
+    }
+    
+    public AdvancedJavaCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
-        this.setCredits(credits);
-        this.setPrerequisites(prerequisites);
     }
 
     public String getCapitalizedCourseName() {
