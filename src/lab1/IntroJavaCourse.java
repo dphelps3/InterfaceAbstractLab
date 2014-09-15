@@ -6,16 +6,24 @@ package lab1;
  * @author      David Phelps
  * @version     1.00
  */
-public class IntroJavaCourse extends IntroToProgrammingCourse {
-    String courseName;
+public class IntroJavaCourse implements WctcCourse {
+    
+    // the string courseName was declared as "String"
+    // I changed it to private String.
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        super(courseName, courseNumber);
+    public IntroJavaCourse() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
-
+    
+    public IntroJavaCourse(String courseName, String courseNumber) {
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber); 
+    }
+    
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -83,6 +91,14 @@ public class IntroJavaCourse extends IntroToProgrammingCourse {
     }
 
     public double setSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void setCourseName(String courseName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getCourseName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -8,20 +8,22 @@ import javax.swing.JOptionPane;
  */
 
 public class IntroToProgrammingCourse implements WctcCourse {
+    
     private String courseName;
     private String courseNumber;
     private double credits;
+    
+    public IntroToProgrammingCourse() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-        
+        this.setCourseNumber(courseNumber); 
     }
 
-    IntroToProgrammingCourse() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
+    // Getter and setter methods for all properties
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -81,30 +83,5 @@ public class IntroToProgrammingCourse implements WctcCourse {
     public void setPrerequisites() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public double getStipends() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public double getSpcSalary() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public double setSpcSalary() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public double getSpcStipends() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public double getSpcCommission() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public double setSpcCommission() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     
 }
