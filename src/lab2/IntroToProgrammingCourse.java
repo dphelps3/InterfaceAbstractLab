@@ -5,16 +5,14 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      David Phelps
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
-    private String courseName;
+public class IntroToProgrammingCourse implements WctcCourse {
     private String courseNumber;
     private double credits;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
+    public IntroToProgrammingCourse(String courseNumber) {
         this.setCourseNumber(courseNumber);
     }
 
@@ -44,17 +42,21 @@ public class IntroToProgrammingCourse {
         this.credits = credits;
     }
 
-    public String getCourseName() {
-        return courseName;
+
+    public void setCourseNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
+    public void setCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     

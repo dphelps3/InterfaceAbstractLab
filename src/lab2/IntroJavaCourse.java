@@ -3,17 +3,16 @@ package lab2;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      David Phelps
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements WctcCourse {
+
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
+    public IntroJavaCourse(String courseNumber) {
         this.courseNumber = courseNumber;
     }
 
@@ -39,6 +38,19 @@ public class IntroJavaCourse {
 
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
+    }
+
+
+    public void setCourseNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setPrerequisites() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     
